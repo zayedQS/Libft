@@ -20,16 +20,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 
 	if (!s1)
-		return (ft_strdup(""));
+		return (NULL);
 	if (!set)
 		return (ft_strdup(s1));
 	start = 0;
 	end = ft_strlen(s1);
-	while (is_set(s1[start], set))
+	while (s1[start] && is_set(s1[start], set))
 		start++;
-	if (start == end)
-		return (ft_strdup(""));
-	while (is_set(s1[end - 1], set))
+	while (end > start && is_set(s1[end - 1], set))
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
