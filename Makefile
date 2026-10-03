@@ -60,14 +60,17 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $@ $^
 
-bonus: $(OBJS) $(BONUS_OBJS)
+bonus: .bonus
+
+.bonus: $(OBJS) $(BONUS_OBJS)
 	$(AR) $(NAME) $^
+	@touch .bonus
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS) .bonus
 
 fclean: clean
 	$(RM) $(NAME)
