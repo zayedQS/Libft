@@ -5,6 +5,8 @@ char	*ft_strrchr(const char *str, int c)
 	int				len;
 	unsigned char	ch;
 
+	if (!str)
+		return (NULL);
 	ch = (unsigned char)c;
 	len = ft_strlen(str);
 	while (len >= 0)
