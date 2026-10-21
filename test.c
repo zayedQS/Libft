@@ -17,10 +17,7 @@ void	print_node_content(void *content)
 
 int	main(void)
 {
-	printf("=======================================\n");
-	printf("        LIBFT INTEGRATION TEST         \n");
-	printf("=======================================\n\n");
-
+	
 	// 1. Part 1: Libc Functions Tests
 	printf("--- Part 1: Libc Tests ---\n");
 	printf("ft_strlen('42Amman'): %zu\n", ft_strlen("42Amman"));
@@ -71,7 +68,7 @@ int	main(void)
 	printf("List cleared successfully: %s\n", head == NULL ? "OK" : "FAIL");
 
 	printf("\n=======================================\n");
-	printf("         ALL TESTS COMPLETED           \n");
+	printf("         ALL TESTS COMPLETED:)))         \n");
 	printf("=======================================\n");
 
 	return (0);
