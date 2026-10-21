@@ -146,7 +146,7 @@ int	main(void)
 * [Norminette](https://github.com/42School/norminette) - the 42 coding standard
 * Peer discussions with other 42 students
 
-**AI usage:** AI was used as a learning aىd to better understand certain concepts
+**AI usage:** AI was used as a learning and to better understand certain concepts
   (such as pointers, memory allocation with `malloc`/`free`, and how some libc functions behave).
 ---
 
